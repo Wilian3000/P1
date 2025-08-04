@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Menú de Opciones</title>
+    <style>
+      body { font-family: sans-serif; padding: 2rem; }
+      .menu { margin-bottom: 1rem; }
+      button { margin-right: .5rem; padding: .5rem 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Elige una opción</h1>
+    <form method="post" class="menu">
+      <button name="opcion" value="A">Opción A</button>
+      <button name="opcion" value="B">Opción B</button>
+      <button name="opcion" value="C">Opción C</button>
+    </form>
+    {% if opcion %}
+      <p>Has seleccionado: <strong>{{ opcion }}</strong></p>
+    {% endif %}
+  </body>
+</html>
